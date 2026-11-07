@@ -48,3 +48,21 @@ Das fachliche Testdesign-Modell in 025 bleibt bis zur geplanten Abstimmung mit K
 **Noch zu entscheiden:** Soll dieses Modul eine neue Nummer (z. B. 030_TestSolutionTestData) und ein eigenes Repository erhalten? Wo liegen die Datensätze (Metadaten vs. tatsächliche Werte)? Werden die Daten nur gesucht/reserviert oder auch erzeugt und gepflegt? Wer definiert fachliche Geschäftspartner-Tags?
 
 **Wichtig:** Diese Dokumentation ist ein **Modulvorschlag**, keine technische Freigabe und keine Festlegung des 025-Testdesign-Modells vor dem Kollegengespräch.
+
+## Entscheidung zum Umfang der ersten Ausbaustufe (07.11.2026)
+
+**Fachlich beschlossen:** Das geplante eigenständige Modul **030_TestSolutionTestData** wird in seiner **ersten Ausbaustufe** auf folgende Fähigkeiten begrenzt:
+
+1. **Anzeige:** Bereits vorhandene Testdatensätze, zunächst insbesondere SAP-Geschäftspartner, übersichtlich darstellen.
+2. **Suche und Filterung:** Daten nach geeigneten Merkmalen, Geschäftspartnerarten, Tags sowie relevanten System-/Mandantenkontexten eingrenzen, soweit die Datenquelle solche Informationen bereitstellt.
+3. **Bereitstellung für Testausführungen:** Einen ausgewählten oder anhand von Kriterien gefundenen vorhandenen Datensatz an einen Testlauf als definierte Referenz bzw. Parameter übergeben. Dabei Berechtigungen und Konflikte bei paralleler Nutzung berücksichtigen.
+
+**Nicht Bestandteil der ersten Ausbaustufe:**
+- Automatisches Anlegen neuer Geschäftspartner oder anderer Testdatensätze.
+- Automatisches Ändern, fachliches Pflegen, Zurücksetzen oder Löschen/Bereinigen von Testdaten.
+- Eine neue SAP-Automatisierungsengine oder ein zweites SAP-Objektmodell.
+
+Ob und wie diese Funktionen später ergänzt werden, bleibt **ausdrücklich offen**. Die Planung soll Erweiterbarkeit ermöglichen, ohne die erste Version aufzublähen.
+
+**Noch zu klären:** Woher der Katalog seine Einträge und Metadaten erhält, welche Berechtigungen gelten, welche Filter zuerst benötigt werden und wie Reservierung bzw. Bereitstellung technisch ablaufen. Keine Änderung an 022/025/010 oder bestehendem Code.
+
